@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ficha de Produto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+    .tabs {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+    }
+    .tab {
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-weight: 600;
+      color: #444;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s;
+    }
+    .tab.active {
+      border-bottom: 3px solid #0078d4;
+      color: #0078d4;
+    }
+    .tab i {
+      color: inherit;
+      transition: color 0.3s;
+    }
+    .tab-content {
+      display: none;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-label {
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      margin-bottom: 4px;
+      color: #505050;
+    }
+    .form-value {
+      background: #f1f3f4;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: monospace;
+      color: #2d2d2d;
+    }
+    .icon {
+      font-size: 12px;
+      color: #605e5c;
+    }
+    .styled-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: "Segoe UI", sans-serif;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .styled-table thead {
+      background-color: #57c1b2;
+      color: white;
+      text-align: left;
+    }
+    .styled-table th,
+    .styled-table td {
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+    .styled-table tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('identificacao')"><i class="fas fa-id-badge icon"></i>Identificação</button>
+    <button class="tab" onclick="showTab('escopo')"><i class="fas fa-list icon"></i>Escopo</button>
+    <button class="tab" onclick="showTab('estrategia')"><i class="fas fa-bullseye icon"></i>Estratégia</button>
+    <button class="tab" onclick="showTab('qualificacao')"><i class="fas fa-check-circle icon"></i>Qualificação</button>
+  </div>
+
+  <div id="identificacao" class="tab-content active">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-box icon"></i>Nome do Produto</label>
+      <div class="form-value">Consultoria Previdenciária
+
+
+
+
+
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-align-left icon"></i>Descrição do Produto</label>
+      <p class="form-value">
+A Consultoria Previdenciária é um serviço especializado que orienta empresas na adequação às normas trabalhistas e previdenciárias, com o objetivo de mitigar riscos legais, otimizar processos de folha de pagamento e benefícios e garantir conformidade com a legislação vigente.
+
+
+
+
+      </p>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-barcode icon"></i>Código</label>
+      <div class="form-value">FIN014</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-sitemap icon"></i>Área</label>
+      <div class="form-value">Consultoria</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-cow icon"></i>Classificação BCG</label>
+      <div class="form-value">Vaca Leiteira</div>
+    </div>
+    </div>
+
+  </div>
+
+  <div id="escopo" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-file-alt icon"></i>Escopo</label>
+      <div class="form-value">
+<ol data-start="445" data-end="1323">
+<li data-start="445" data-end="631" class="">
+<p data-start="448" data-end="472" class=""><strong data-start="448" data-end="472">Diagnóstico Inicial:</strong></p>
+<ul data-start="476" data-end="631">
+<li data-start="476" data-end="567" class="">
+<p data-start="478" data-end="567" class="">Análise da folha de pagamento, contratos de trabalho e guias previdenciárias (GPS, GFIP).</p>
+</li>
+<li data-start="571" data-end="631" class="">
+<p data-start="573" data-end="631" class="">Verificação dos acordos sindicais e benefícios concedidos.</p>
+</li>
+</ul>
+</li>
+<li data-start="633" data-end="798" class="">
+<p data-start="636" data-end="661" class=""><strong data-start="636" data-end="661">Mapeamento de Riscos:</strong></p>
+<ul data-start="665" data-end="798">
+<li data-start="665" data-end="731" class="">
+<p data-start="667" data-end="731" class="">Identificação de inconformidades previdenciárias e trabalhistas.</p>
+</li>
+<li data-start="735" data-end="798" class="">
+<p data-start="737" data-end="798" class="">Avaliação de passivos potenciais e oportunidades de economia.</p>
+</li>
+</ul>
+</li>
+<li data-start="800" data-end="968" class="">
+<p data-start="803" data-end="830" class=""><strong data-start="803" data-end="830">Orientação e Adequação:</strong></p>
+<ul data-start="834" data-end="968">
+<li data-start="834" data-end="891" class="">
+<p data-start="836" data-end="891" class="">Propostas de melhorias para adequação às normas legais.</p>
+</li>
+<li data-start="895" data-end="968" class="">
+<p data-start="897" data-end="968" class="">Orientação sobre práticas de gestão de folha de pagamento e benefícios.</p>
+</li>
+</ul>
+</li>
+<li data-start="970" data-end="1150" class="">
+<p data-start="973" data-end="998" class=""><strong data-start="973" data-end="998">Revisão de Processos:</strong></p>
+<ul data-start="1002" data-end="1150">
+<li data-start="1002" data-end="1082" class="">
+<p data-start="1004" data-end="1082" class="">Avaliação e otimização dos procedimentos de cálculo e concessão de benefícios.</p>
+</li>
+<li data-start="1086" data-end="1150" class="">
+<p data-start="1088" data-end="1150" class="">Implementação de práticas para redução de custos trabalhistas.</p>
+</li>
+</ul>
+</li>
+<li data-start="1152" data-end="1323" class="">
+<p data-start="1155" data-end="1184" class=""><strong data-start="1155" data-end="1184">Acompanhamento e Suporte:</strong></p>
+<ul data-start="1188" data-end="1323">
+<li data-start="1188" data-end="1257" class="">
+<p data-start="1190" data-end="1257" class="">Monitoramento contínuo das práticas trabalhistas e previdenciárias.</p>
+</li>
+<li data-start="1261" data-end="1323" class="">
+<p data-start="1263" data-end="1323" class="">Suporte técnico em caso de questionamentos ou fiscalizações.</p>
+</li>
+</ul>
+</li>
+</ol>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-list-check icon"></i>Problemas que Resolve
+      </label>
+      <div class="form-value">
+<ol data-start="1364" data-end="1655">
+<li data-start="1364" data-end="1427" class="">
+<p data-start="1367" data-end="1427" class="">Inconformidade com as normas previdenciárias e trabalhistas.</p>
+</li>
+<li data-start="1428" data-end="1479" class="">
+<p data-start="1431" data-end="1479" class="">Pagamento excessivo de encargos previdenciários.</p>
+</li>
+<li data-start="1480" data-end="1544" class="">
+<p data-start="1483" data-end="1544" class="">Risco de passivos trabalhistas devido a práticas inadequadas.</p>
+</li>
+<li data-start="1545" data-end="1602" class="">
+<p data-start="1548" data-end="1602" class="">Gestão ineficiente da folha de pagamento e benefícios.</p>
+</li>
+<li data-start="1603" data-end="1655" class="">
+<p data-start="1606" data-end="1655" class="">Dificuldade em acompanhar mudanças na legislação.</p>
+</li>
+</ol>
+      </div>
+
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="	fas fa-trophy icon"></i>Benefícios
+      </label>
+      <div class="form-value">
+<ol data-start="1685" data-end="1955">
+<li data-start="1685" data-end="1748" class="">
+<p data-start="1688" data-end="1748" class="">Redução de multas e litígios trabalhistas e previdenciários.</p>
+</li>
+<li data-start="1749" data-end="1809" class="">
+<p data-start="1752" data-end="1809" class="">Otimização de custos com folha de pagamento e benefícios.</p>
+</li>
+<li data-start="1810" data-end="1851" class="">
+<p data-start="1813" data-end="1851" class="">Conformidade com a legislação vigente.</p>
+</li>
+<li data-start="1852" data-end="1895" class="">
+<p data-start="1855" data-end="1895" class="">Maior segurança jurídica para a empresa.</p>
+</li>
+<li data-start="1896" data-end="1955" class="">
+<p data-start="1899" data-end="1955" class="">Melhoria no controle e gestão dos benefícios oferecidos.</p>
+</li>
+</ol>
+      </div>
+    </div>
+  </div>
+
+  <div id="estrategia" class="tab-content">
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-fire icon"></i>Prioridade de Venda</label>
+        <div class="form-value">Média</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-lightbulb icon"></i>Quando Ofertar</label>
+      <div class="form-value">
+<ol data-start="1989" data-end="2320">
+<li data-start="1989" data-end="2068" class="">
+<p data-start="1992" data-end="2068" class="">Empresas que desejam otimizar sua gestão de folha de pagamento e benefícios.</p>
+</li>
+<li data-start="2069" data-end="2138" class="">
+<p data-start="2072" data-end="2138" class="">Negócios que possuem histórico de multas ou litígios trabalhistas.</p>
+</li>
+<li data-start="2139" data-end="2217" class="">
+<p data-start="2142" data-end="2217" class="">Empresas que desejam garantir conformidade com a legislação previdenciária.</p>
+</li>
+<li data-start="2218" data-end="2269" class="">
+<p data-start="2221" data-end="2269" class="">Negócios que buscam reduzir custos trabalhistas.</p>
+</li>
+<li data-start="2270" data-end="2320" class="">
+<p data-start="2273" data-end="2320" class="">Empresas com alta rotatividade de funcionários.</p>
+</li>
+</ol>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-gem icon"></i>Proposta de Valor</label>
+      <div class="form-value">A Consultoria Previdenciária da Funcional garante que sua empresa opere em total conformidade com as normas trabalhistas e previdenciárias, reduzindo riscos de passivos e otimizando os custos com folha de pagamento e benefícios. Com suporte técnico especializado, sua empresa terá segurança jurídica e economia financeira.
+
+
+
+
+
+    </div>
+    </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-shopping-basket icon"></i>Cross-selling</label>
+      <div class="form-value">
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Produto Complementar</th>
+            <th>Justificativa da Conexão</th>
+            <th>Área Responsável</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Compliance Trabalhista e Previdenciária</td>
+            <td>Garante que a empresa opere em conformidade com a legislação.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>BPO Trabalhista e Previdenciário</td>
+            <td>Terceiriza a gestão da folha de pagamento e dos encargos previdenciários.</td>
+            <td>Contabilidade</td>
+        </tr>
+        <tr>
+            <td>Auditoria Trabalhista</td>
+            <td>Verifica a conformidade das práticas trabalhistas.</td>
+            <td>Jurídico</td>
+        </tr>
+        <tr>
+            <td>Consultoria Trabalhista</td>
+            <td>Identifica oportunidades de correção de práticas trabalhistas.</td>
+            <td>Jurídico</td>
+        </tr>
+        <tr>
+            <td>Planejamento Tributário</td>
+            <td>Identifica oportunidades de economia fiscal em encargos trabalhistas.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Gestão de Resultados Financeiros</td>
+            <td>Permite visualizar o impacto financeiro da redução de custos trabalhistas.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>BPO Financeiro</td>
+            <td>Apoia na organização e controle do fluxo financeiro da empresa.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Diagnóstico Empresarial</td>
+            <td>Identifica falhas nos processos trabalhistas e previdenciários.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Treinamento e Capacitação</td>
+            <td>Desenvolve habilidades de conformidade e gestão de pessoas.</td>
+            <td>Consultoria Empresarial</td>
+        </tr>
+        <tr>
+            <td>Planejamento Sucessório e Patrimonial</td>
+            <td>Protege o patrimônio contra riscos trabalhistas.</td>
+            <td>Jurídico</td>
+        </tr>
+        <tr>
+            <td>Gestão de Contratos Trabalhistas</td>
+            <td>Garante que os contratos estejam corretamente redigidos.</td>
+            <td>Jurídico</td>
+        </tr>
+        <tr>
+            <td>Due Diligence Trabalhista</td>
+            <td>Avalia riscos trabalhistas em processos de fusões e aquisições.</td>
+            <td>Jurídico</td>
+        </tr>
+    </tbody>
+</table>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="qualificacao" class="tab-content">
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-briefcase icon"></i>Regime Tributário Atendimento</label>
+      <div class="form-value">Lucro Real, Lucro Presumido </div>
+    </div>
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-sync-alt icon"></i>Tipo de Cobrança</label>
+        <div class="form-value">Pontual</div>
+      </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-globe icon"></i>Abrangência Geográfica</label>
+      <div class="form-value">Nacional</div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class=" fas fa-file-invoice-dollar icon"></i>Faturamento Ideal</label>
+        <div class="form-value">Empresas com faturamento acima de R$ 5 milhões/ano, que possuem quadro de colaboradores significativo e realizam o pagamento de encargos previdenciários.</div>
+      </div>
+
+    <div class="form-group">
+        <label class="form-label"><i class="fas fa-paperclip icon"></i>Documentos Solicitados</label>
+        <div class="form-value">
+<ol data-start="4587" data-end="4787">
+<li data-start="4587" data-end="4627" class="">
+<p data-start="4590" data-end="4627" class="">Folha de pagamento dos colaboradores.</p>
+</li>
+<li data-start="4628" data-end="4653" class="">
+<p data-start="4631" data-end="4653" class="">Contratos de trabalho.</p>
+</li>
+<li data-start="4654" data-end="4691" class="">
+<p data-start="4657" data-end="4691" class="">Guias previdenciárias (GPS, GFIP).</p>
+</li>
+<li data-start="4692" data-end="4736" class="">
+<p data-start="4695" data-end="4736" class="">Acordos sindicais e convenções coletivas.</p>
+</li>
+<li data-start="4737" data-end="4787" class="">
+<p data-start="4740" data-end="4787" class="">Relatórios de encargos e benefícios concedidos.</p>
+</li>
+</ol> </div>
+        
+              </div>
+
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Setores ICP</label>
+                <div class="form-value">
+<ul data-start="4844" data-end="4950">
+<li data-start="4844" data-end="4876" class="">
+<p data-start="4846" data-end="4876" class="">Transporte (clientes da base).</p>
+</li>
+<li data-start="4877" data-end="4890" class="">
+<p data-start="4879" data-end="4890" class="">Indústrias.</p>
+</li>
+<li data-start="4891" data-end="4902" class="">
+<p data-start="4893" data-end="4902" class="">Comércio.</p>
+</li>
+<li data-start="4903" data-end="4914" class="">
+<p data-start="4905" data-end="4914" class="">Serviços.</p>
+</li>
+<li data-start="4915" data-end="4950" class="">
+<p data-start="4917" data-end="4950" class="">Empresas de médio e grande porte.</p>
+</li>
+</ul>      </div>
+              <div class="form-group">
+                <label class="form-label"><i class="fas fa-exclamation-circle icon"></i>Objeções Mapeadas</label>
+                <div class="form-value">
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Objeção</th>
+            <th>O que o cliente quer dizer</th>
+            <th>Como contornar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Nossa contabilidade já cuida disso.</td>
+            <td>Confia que o contador já identifica problemas.</td>
+            <td>Demonstrar que o serviço é especializado e vai além do escopo tradicional da contabilidade.</td>
+        </tr>
+        <tr>
+            <td>Não temos problemas com o pagamento de encargos.</td>
+            <td>Acredita que está tudo em conformidade.</td>
+            <td>Explicar que o serviço é preventivo e que erros podem ocorrer sem que sejam percebidos.</td>
+        </tr>
+        <tr>
+            <td>Isso parece muito caro para o que oferece.</td>
+            <td>Dúvida sobre o retorno financeiro.</td>
+            <td>Mostrar exemplos de empresas que reduziram custos com o serviço.</td>
+        </tr>
+        <tr>
+            <td>Não queremos mexer na folha de pagamento agora.</td>
+            <td>Medo de mudanças e impacto na equipe.</td>
+            <td>Garantir que o processo é seguro e visa apenas corrigir práticas inadequadas.</td>
+        </tr>
+        <tr>
+            <td>Isso não vai gerar passivos?</td>
+            <td>Medo de que o serviço gere problemas com o Fisco.</td>
+            <td>Explicar que o serviço é 100% legal e segue a legislação vigente.</td>
+        </tr>
+    </tbody>
+</table>
+
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label"><i class=" fas fa-industry icon"></i>Personas</label>
+                <div class="form-value">
+                    <ul data-start="107" data-end="257">
+                                               <li data-start="174" data-end="257" class="" style="">
+                        <p data-start="176" data-end="257" class=""><strong data-start="176" data-end="190">Decisores:</strong> Sócios e Proprietários de Empresas.</p>
+                        </li>
+                        </ul> </div>
+              </div>
+    <div class="form-group">
+      <label class="form-label"><i class="fas fa-star-half-alt icon"></i>Diferenciais</label>
+      <div class="form-value">A Funcional oferece o serviço de Consultoria Previdenciária com excelência técnica, conformidade legal e atendimento consultivo, garantindo que o cliente tenha segurança na gestão de obrigações previdenciárias e aproveitamento de benefícios legais.
+
+O serviço inclui análise das contribuições previdenciárias, orientação sobre enquadramento correto, revisão de encargos incidentes sobre a folha de pagamento e apoio na recuperação de valores pagos a maior, assegurando proteção jurídica, economia e gestão eficiente.
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      document.querySelector(`.tab[onclick="showTab('${id}')"]`).classList.add('active');
+    }
+  </script>
+</body>
+</html>
